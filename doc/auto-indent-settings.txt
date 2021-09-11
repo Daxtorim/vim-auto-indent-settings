@@ -1,0 +1,29 @@
+*auto-indent-settings.txt* Heuristically set buffer options   0.1, Sep 11, 2021
+
+Author:  Daxtorim
+Repo:    https://github.com/Daxtorim/vim-auto-indent-settings
+License: Same terms as Vim itself (see |license|)
+
+===============================================================================
+SUMMARY                                                  *auto-indent-settings*
+
+This plugin automatically adjusts indentation settings based on what is
+already found in the opened file. Vim modelines will be honoured.
+
+
+                                                            *:IndentAutoDetect*
+:IndentAutoDetect       Manually trigger the detection of indentation settings.
+
+                                                         *:IndentAutoIndicator*
+:IndentAutoIndicator    Prints out the current buffer's settings in long
+                        format.
+
+                                                         *IndentAutoIndicator()*
+IndentAutoIndicator()   If no argument is given, returns string of the
+                        active settings in their short notation, like 
+                        "ts=4,sts=-1,sw=0,noet". If one truthy argument is
+                        given (e.g. the string "verbose"), echos a string of 
+                        the active settings in their long form.
+
+===============================================================================
+" vim: tw=80:ts=8:sts=-1:sw=0:et:ft=help
